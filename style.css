@@ -1,0 +1,30 @@
+/* * { */
+    /* box-sizing: border-box; */
+    /* padding: 0px; */
+    /* margin: 0px; */
+/* } */
+
+.containar{
+    display:flex;
+    flex-direction: column;
+    background-color: blue;
+    align-items: center;
+    padding: 50px;
+}
+
+.containar div{
+    background-color: white;
+    /* padding: 5px; */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+
+.box {
+    border:2px solid black;
+    /* margin: 2px; */
+    padding: 20px;
+}
