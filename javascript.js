@@ -1,4 +1,4 @@
-
+createTiles();
 
 
 const btn=document.querySelector("button");
