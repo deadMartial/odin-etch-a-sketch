@@ -12,7 +12,7 @@
     /* padding: 10%; */
     height:80vh;
     width: 80vw;
-    /* background-color: blue; */
+    background-color: black;
     margin: 10vh 10vw;
 }
 
@@ -44,5 +44,6 @@
     /* flex-wrap: wrap; */
     flex-grow: 1;
     /* align-self: ; */
+    /* background-color: black; */
     
 }

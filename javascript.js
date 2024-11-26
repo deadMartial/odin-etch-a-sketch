@@ -33,8 +33,12 @@ function cngcolor(e) {
 
     let col=rngColor();
 
-    console.log(computedStyle.backgroundColor);
-    console.log(col);
+    // console.log(computedStyle.backgroundColor);
+    // console.log(col);
+    let op=parseFloat(now.style["opacity"])-0.1;
+    now.style["opacity"]=(now.style["opacity"]==="")?"1":op;
+    if(op<0){op=0;}
+    console.log(now.style["opacity"]);
     now.style["background-color"]=col;
 }
 
