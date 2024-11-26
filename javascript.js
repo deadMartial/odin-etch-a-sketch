@@ -1,6 +1,14 @@
-let len=8
 
-const containar=document.querySelector(".containar");
+
+
+const btn=document.querySelector("button");
+btn.addEventListener("click", createTiles);
+
+function createTiles(){
+    const len=document.querySelector("input").value;
+    // console.log(getle);
+    const containar=document.querySelector(".containar");
+    containar.innerHTML="";
 for(let i=0;i<len;i++) {
     const crrdiv=document.createElement("div")
     crrdiv.classList.add("row");
@@ -13,13 +21,27 @@ for(let i=0;i<len;i++) {
     }
     containar.appendChild(crrdiv);
 }
+}
+
+
 
 function cngcolor(e) {
     
     const now=e.target;
     const computedStyle=getComputedStyle(now);
-    let col=(computedStyle.backgroundColor=="rgb(0, 0, 0)")?"white":"black";
+    // let col=(computedStyle.backgroundColor=="rgb(0, 0, 0)")?"white":"black";
+
+    let col=rngColor();
+
     console.log(computedStyle.backgroundColor);
     console.log(col);
     now.style["background-color"]=col;
+}
+
+function rngColor(){
+    const r=Math.floor(Math.random()*256);
+    const g=Math.floor(Math.random()*256);
+    const b=Math.floor(Math.random()*256);
+
+    return `rgba(${r}, ${g}, ${b}, 1.00)`;
 }
